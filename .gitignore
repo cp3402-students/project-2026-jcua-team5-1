@@ -1,3 +1,5 @@
+.env
+
 # Ignore IDE and system files
 .idea/
 .vscode/
