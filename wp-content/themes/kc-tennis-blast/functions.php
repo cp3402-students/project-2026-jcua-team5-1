@@ -29,3 +29,16 @@ function kc_tennis_blast_load_custom_fonts() {
 }
 add_action( 'wp_enqueue_scripts', 'kc_tennis_blast_load_custom_fonts' );
 add_action( 'enqueue_block_assets', 'kc_tennis_blast_load_custom_fonts' );
+
+function tennis_blast_enqueue_scripts() {
+	if ( ! is_admin() ) {
+		wp_enqueue_script(
+			'coaches-carousel-js',
+			get_template_directory_uri() . '/js/coaches-carousel.js',
+			array(),
+			'1.0',
+			true
+		);
+	}
+}
+add_action( 'wp_enqueue_scripts', 'tennis_blast_enqueue_scripts' );
