@@ -181,18 +181,16 @@
 
 3. Publish content.
 
-4. Export contents via the built-in export tool in WordPress.
-    * Select Pages
-    * Apply additional filters if necessary
-    * .xml file will download
+4. Export contents via All-in-One WP Migration:
+   - Navigate to All-in-One WP Migration → Export  
+   - Select Export To → File  
+   - Download the `.wpress` file
 
-5. Import contents into staging website via the built-in import tool in WordPress.
-    * Run WordPress Importer from Import tab
-    * Select downloaded .xml file of relevant content
-    * Upload file and import
-    * Select 'Download and import file attachments'
-    * Submit
-    * Verify that all content has been imported successfully, and identify any items that failed to import.
+5. Import contents into staging website:
+   - Navigate to All-in-One WP Migration → Import  
+   - Upload `.wpress` file  
+   - Confirm overwrite  
+   - Verify content imported successfully
 
 6. Notify team members of the changes that were made.
 
@@ -200,13 +198,34 @@
 ## Deployment Workflow - Staging Environment
 
 ### Initialising the Staging Site
-x
+
+1. Create a new Amazon Lightsail instance.
+
+2. Select:
+   - Linux/Unix platform  
+   - Debian 12 (bookworm)
+
+3. Configure instance settings:
+   - Select wordpress  
+   - choose an appropriate instance size  
+   - assign a static IP address
+
+4. Connect to the instance via SSH:
+
+```bash
+ssh -i key.pem admin@staging-server-ip
+
+5. Update system:
+
+```bash
+sudo apt update
+sudo apt upgrade -y
 
 
 ### Deploying the Staging Site Content
 1. In the localhost website, Log in to WordPress admin.
 
-2. Navigate to 'Tools'.
+2. Navigate to All-in-One WP Migration on the side menu.
 
 3. Select export and download file.
 
@@ -224,13 +243,34 @@ x
 ## Deployment Workflow - Production Environment
 
 ### Initialising the Production Site
-x
+
+1. Create a new Amazon Lightsail instance.
+
+2. Select:
+   - Linux/Unix platform  
+   - Debian 12 (bookworm)
+
+3. Configure instance settings:
+   - Select wordpress  
+   - choose an appropriate instance size  
+   - assign a static IP address
+
+4. Connect to the instance via SSH:
+
+```bash
+ssh -i key.pem admin@production-server-ip
+
+5. Update system:
+
+```bash
+sudo apt update
+sudo apt upgrade -y
 
 
 ### Deploying the Production Site Content
 1. In the staging website, log in to WordPress admin.
 
-2. Navigate to 'Tools'.
+2. Navigate to All-in-One WP Migration on the side menu.
 
 3. Select export and download file.
 
