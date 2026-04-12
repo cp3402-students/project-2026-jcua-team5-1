@@ -1,4 +1,4 @@
-# Development & Deployment Workflow
+# Development & Deployment Workflow Documentation
 
 ## Table of Contents
 1. [Development Workflow - Project Management](#development-workflow---project-management)
@@ -22,6 +22,7 @@
 
 2. Create a new card in 'Inbox'.
     * Add a description of the task.
+    * Add a relevant label, or create a new label if needed.
     * Add a due date, if relevant.
 
 3. Move the chosen card into 'Next Actions' to reflect upcoming tasks.
@@ -198,7 +199,6 @@
 ## Deployment Workflow - Staging Environment
 
 ### Initialising the Staging Site
-
 1. Create a new Amazon Lightsail instance.
 
 2. Select:
@@ -206,18 +206,16 @@
    - Debian 12 (bookworm)
 
 3. Configure instance settings:
-   - Select wordpress  
-   - choose an appropriate instance size  
-   - assign a static IP address
+   - Select WordPress  
+   - Choose an appropriate instance size  
+   - Assign a static IP address
 
 4. Connect to the instance via SSH:
-
 ```bash
 ssh -i key.pem admin@staging-server-ip
 ```
 
 5. Update system:
-
 ```bash
 sudo apt update
 sudo apt upgrade -y
@@ -245,7 +243,6 @@ sudo apt upgrade -y
 ## Deployment Workflow - Production Environment
 
 ### Initialising the Production Site
-
 1. Create a new Amazon Lightsail instance.
 
 2. Select:
@@ -253,18 +250,16 @@ sudo apt upgrade -y
    - Debian 12 (bookworm)
 
 3. Configure instance settings:
-   - Select wordpress  
-   - choose an appropriate instance size  
-   - assign a static IP address
+   - Select WordPress  
+   - Choose an appropriate instance size  
+   - Assign a static IP address
 
 4. Connect to the instance via SSH:
-
 ```bash
 ssh -i key.pem admin@production-server-ip
 ```
 
 5. Update system:
-
 ```bash
 sudo apt update
 sudo apt upgrade -y
