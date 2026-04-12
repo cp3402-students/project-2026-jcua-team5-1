@@ -214,12 +214,14 @@
 
 ```bash
 ssh -i key.pem admin@staging-server-ip
+```
 
 5. Update system:
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
+```
 
 
 ### Deploying the Staging Site Content
@@ -259,12 +261,14 @@ sudo apt upgrade -y
 
 ```bash
 ssh -i key.pem admin@production-server-ip
+```
 
 5. Update system:
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
+```
 
 
 ### Deploying the Production Site Content
