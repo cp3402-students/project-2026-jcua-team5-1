@@ -1,7 +1,37 @@
 # KC Tennis Blast Theme Documentation
 
 ## Table of Contents
-1. 
+1. [Overview](#overview)
+2. [Purpose of the Theme](#purpose-of-the-theme)
+3. [Theme Approach](#theme-approach)
+4. [Theme Structure](#theme-structure)
+5. [Core Features](#core-features)
+   - [Editor-Driven Content](#editor-driven-content)
+   - [Global Styling (`theme.json`)](#global-styling-themejson)
+   - [Reusable Template Parts](#reusable-template-parts)
+     - [Header](#header)
+     - [Footer](#footer)
+   - [Page Templates](#page-templates)
+   - [Coaches Carousel](#coaches-carousel)
+   - [Editor Styling](#editor-styling)
+   - [Typography](#typography)
+6. [Design System](#design-system)
+   - [Colours](#colours)
+   - [Layout](#layout)
+7. [Key Files Explained](#key-files-explained)
+   - [`theme.json`](#themejson)
+   - [`functions.php`](#functionsphp)
+   - [`style.css`](#stylecss)
+   - [`templates/*.html`](#templateshtml)
+   - [`parts/header.html` and `parts/footer.html`](#partsheaderhtml-and-partsfooterhtml)
+   - [`js/coaches-carousel.js`](#jscoaches-carouseljs)
+8. [Key Design Decisions](#key-design-decisions)
+   - [Editor-First Approach](#editor-first-approach)
+   - [Separation of Content and Presentation](#separation-of-content-and-presentation)
+9. [Working With This Theme](#working-with-this-theme)
+10. [Important Notes](#important-notes)
+11. [Maintenance Considerations](#maintenance-considerations)
+12. [Summary](#summary)
 
 
 ## Overview
