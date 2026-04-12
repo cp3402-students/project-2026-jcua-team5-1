@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1200px",
+      "wideSize": "1400px"
+    },
+    "color": {
+      "palette": [
+        { "slug": "bg", "name": "Background", "color": "#e9e9e9" },
+        { "slug": "dark", "name": "Dark", "color": "#111111" },
+        { "slug": "green", "name": "Green", "color": "#0f4f34" },
+        { "slug": "lime", "name": "Lime", "color": "#c9ef2f" },
+        { "slug": "white", "name": "White", "color": "#ffffff" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Inter', sans-serif",
+          "name": "Inter",
+          "slug": "inter"
+        },
+        {
+          "fontFamily": "'Alumni Sans', sans-serif",
+          "name": "Alumni Sans",
+          "slug": "alumni"
+        },
+        {
+          "fontFamily": "Arial, sans-serif",
+          "name": "Arial",
+          "slug": "arial"
+        }
+      ]
+    },
+    "spacing": {
+      "units": [ "px", "em", "rem", "%" ]
+    }
+  },
+  "styles": {
+	  "color": {
+		"background": "var(--wp--preset--color--white)",
+		"text": "var(--wp--preset--color--dark)"
+	  },
+	  "typography": {
+		"fontFamily": "var(--wp--preset--font-family--inter)"
+	  },
+	  "elements": {
+		"heading": {
+		  "typography": {
+			"fontFamily": "var(--wp--preset--font-family--alumni)"
+		  }
+		}
+	  },
+	  "spacing": {
+		"blockGap": "1.5rem"
+	  },
+	  "blocks": {
+		"core/button": {
+		  "border": {
+			"radius": "999px"
+		  },
+		  "spacing": {
+			"padding": {
+			  "top": "0.8rem",
+			  "bottom": "0.8rem",
+			  "left": "1.2rem",
+			  "right": "1.2rem"
+			}
+		  }
+		},
+		"core/group": {
+		  "spacing": {
+			"padding": {
+			  "top": "0rem",
+			  "bottom": "0rem",
+			  "left": "0rem",
+			  "right": "0rem"
+			}
+		  }
+		}
+	  }
+	},
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ]
+}
